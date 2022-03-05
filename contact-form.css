@@ -1,0 +1,123 @@
+:root {
+    --header-height: 75px;
+  }
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+.header {
+    font-size: 2rem;
+    font-weight: 700;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: var(--header-height);
+    
+    background-color: rgb(50, 50, 122);
+    
+    color: whitesmoke;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: calc(100vh - var(--header-height));
+
+    background-color: rgb(213, 213, 213);
+}
+
+.form__main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 60vh;
+    width: 320px;
+
+    border: solid 2px gray;
+    border-radius: 8px;
+
+    background-color: rgb(50, 50, 122);
+    color: white;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form__label {
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.form__input {
+    height: 2rem;
+    width: 250px;
+
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.form__input--radio {
+    cursor: pointer;
+}
+
+.fieldset__main-container {
+    margin: 20px auto;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px auto;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form__submit {
+    height: 50px;
+    width: 120px;
+
+    background-color: rgb(40, 135, 165);
+    color: white;
+
+    border: solid 5px rgb(50, 50, 122);
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.confirmationMsg {
+    color: rgb(40, 135, 165);
+
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1s;
+}
